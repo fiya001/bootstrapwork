@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Library System</h1>
+<script>
+  var book = {
+    title: "The Alchemist",
+    author: "Paulo Coelho",
+    year: 1988,
+    getinfo: function() {
+      return "The book '" + this.title + "' was written by " + this.author + " in " + this.year + ".";
+    }
+  };
+  function printBookSummary(bookObj) {
+    console.log(bookObj.getinfo());
+  }
+  printBookSummary(book);
+</script>
+</body>
+</html>

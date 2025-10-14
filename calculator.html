@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>Grocery Shop Calculator</h1>
+<script>
+  var ricePrice = 50;
+  var riceQty = 2;
+  var sugarPrice = 40;
+  var sugarQty = 3;
+  var wheatPrice = 60;
+  var wheatQty = 1;
+  var riceCost = ricePrice * riceQty;
+  var sugarCost = sugarPrice * sugarQty;
+  var wheatCost = wheatPrice * wheatQty;
+  console.log("Cost of rice: ₹" + riceCost);
+  console.log("Cost of sugar: ₹" + sugarCost);
+  console.log("Cost of wheat: ₹" + wheatCost);
+  var totalBill = riceCost + sugarCost + wheatCost;
+  console.log("Total bill: ₹" + totalBill);
+  sugarQty = 5;
+  sugarCost = sugarPrice * sugarQty;
+  totalBill = riceCost + sugarCost + wheatCost;
+  console.log("Updated total bill after changing sugar quantity: ₹" + totalBill);
+</script>
+</body>
+</html>

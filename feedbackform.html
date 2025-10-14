@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Feedback Form Processing</h1>
+<script>
+  var feedback = "   I loved the FOOD and the service!   ";
+  console.log("Original feedback: " + feedback);
+  feedback = feedback.trim();
+  console.log("After trimming: " + feedback);
+  feedback = feedback.toLowerCase();
+  console.log("In lowercase: " + feedback);
+  feedback = feedback.replace("food", "ambience");
+  console.log("After replacing: " + feedback);
+  var position = feedback.indexOf("service");
+  console.log("Position of 'service': " + position);
+  var wordsArray = feedback.split(" ");
+  console.log("Array of words:");
+  console.log(wordsArray);
+</script>
+</body>
+</html>

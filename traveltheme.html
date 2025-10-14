@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel themed website</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="promotion" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#promotion" data-slide-to="0" class="active"></li>
+            <li data-target="#promotion" data-slide-to="1"></li>
+            <li data-target="#promotion" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+             <div class="carousel-item active">
+                <img src=https://images.pexels.com/photos/237272/pexels-photo-237272.jpeg?cs=srgb&dl=pexels-pixabay-237272.jpg&fm=jpg alt="Ocean" width="2000" height="750">
+                 <div class="carousel-caption bg-dark  rounded">
+                    <h1 class="text-white">Relax by Ocean</h1>
+                    <p>Enjoy your dream vacation at serene beaches.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#promoModal">Book Now</button>
+                </div> 
+            </div>
+            <div class="carousel-item">
+                <img src=https://wallpapercave.com/wp/wp4511436.jpg alt="Mountains" width="2000" height="750">
+                <div class="carousel-caption bg-dark rounded">
+                    <h3>Adventure in the Mountains</h3>
+                    <p>Experience nature at its peak with exciting hikes.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#promoModal">Book Now</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=https://images.pexels.com/photos/809060/pexels-photo-809060.jpeg?cs=srgb&dl=city-landmark-lights-809060.jpg&fm=jpg alt="City" width="2000" height="750">
+                <div class="carousel-caption bg-dark rounded">
+                    <h3>Explore the City Lights</h3>
+                    <p>Discover new cultures and experiences in vibrant cities.</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#promoModal">Book Now</button>
+                </div>
+                
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#promotion" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#promotion" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+         
+    </div>
+    <div class="modal fade" id="promoModal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Booking Information</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Thank you for your interest! Our booking team will assist you with destination details, packages, and best travel dates.</p>
+                            <ul>
+                                <li>Flexible travel dates and packages</li>
+                                <li>Personalized itineraries</li>
+                                <li>Customer support available 24/7</li>
+                                <li>Special discounts for early bookings</li>
+                            </ul>
+                            <p><strong>Contact us:</strong> travel@skyway.com</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Proceed to Booking</button>
+                        </div>
+                    </div>
+                    </div>
+    </div>
+   <div class="text-center mt-3">
+                    <span class="info-icon" data-toggle="tooltip" data-placement="top" title="Click 'Book Now' on any banner to see booking options and trip details.">&#9432;</span>
+                </div>
+</body>
+</html>

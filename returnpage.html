@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Item Return Checker</h2>
+<button onclick="checkReturn()">Check Return</button>
+
+<p id="result"></p>
+
+<script>
+  var order = {
+    itemName: "Wireless Earbuds",
+    isDelivered: true,
+    daysSinceDelivery: 5
+  };
+   let message = (order.isDelivered && order.daysSinceDelivery <= 7) && 'Eligible for Return'
+                    || 'Return Period Expired';
+
+            let hasName = 'itemName' in order;
+            console.log('Has itemName?', hasName);
+            delete order.daysSinceDelivery;
+            console.log('Order object after deletion:', order);
+    </script>
+</body>
+</html>

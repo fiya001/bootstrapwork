@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Grocery Store Product List</h2>
+<p id="output"></p>
+<script>
+var products = ["Apple", "Banana", "Mango", "Orange"];
+var prices = [50, 30, 70, 40];
+
+var productList = [];
+for (var i = 0; i < products.length; i++) {
+  productList.push("Product: " + products[i] + " - Price: " + prices[i]);
+}
+document.getElementById("output").innerHTML = "<b>All Products:</b><br>" + productList.join("<br>");
+var expensiveProducts = [];
+for (var i = 0; i < prices.length; i++) {
+  if (prices[i] > 50) {
+    expensiveProducts.push("Product: " + products[i] + " - Price: " + prices[i]);
+  }
+}
+document.getElementById("output").innerHTML += "<br><br><b>Products with Price > 50:</b><br>" + expensiveProducts.join("<br>");
+products.push("Watermelon");
+prices.push(80);
+var updatedList = [];
+for (var i = 0; i < products.length; i++) {
+  updatedList.push("Product: " + products[i] + " - Price: " + prices[i]);
+}
+document.getElementById("output").innerHTML += "<br><br><b>Updated Product List:</b><br>" + updatedList.join("<br>");
+</script>
+
+</body>
+</html>

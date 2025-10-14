@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Store Sales</h1>
+<p id="total">Total Earnings will appear here</p>
+<script>
+  var tShirtsSold = 5;
+  var tShirtPrice = 400;
+  var capsSold = 3;
+  var capPrice = 150;
+  var totalEarnings = (tShirtsSold * tShirtPrice) + (capsSold * capPrice);
+  document.getElementById("total").innerHTML = "Total Earnings: ₹" + totalEarnings;
+  tShirtPrice = 450;
+  totalEarnings = (tShirtsSold * tShirtPrice) + (capsSold * capPrice);
+  document.getElementById("total").innerHTML += "<br>Updated Total Earnings: ₹" + totalEarnings;
+</script>
+</body>
+</html>
